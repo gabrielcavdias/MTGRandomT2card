@@ -1,0 +1,55 @@
+:root{
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(39, 39, 39);
+    color: rgb(255, 253, 250);
+}
+#output{
+    margin:2rem 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+ul a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 10px;
+}
+ul a:hover{
+    text-shadow: 0 0 8px rgb(37, 109, 23);
+}
+input[type="text"]{
+    width: 20rem;
+    height: 1.5rem;
+    border-radius: 5px;
+}
+br{
+    margin: 0.8rem 0;
+}
+.card{
+    margin: 1rem 0;
+    width: 20%;
+    background-color: rgb(58, 43, 43);
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+.card p:first-child{
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0 5px rgb(224, 64, 15);
+}
+.card p:last-child{
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-align: right;
+}
