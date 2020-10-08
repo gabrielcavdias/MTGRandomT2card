@@ -48,8 +48,11 @@ br{
     text-align: center;
     text-shadow: 0 0 5px rgb(224, 64, 15);
 }
-.card p:last-child{
+.PowTough{
     font-weight: bold;
     font-size: 1.3rem;
     text-align: right;
+}
+.card img{
+    width: 17px;
 }

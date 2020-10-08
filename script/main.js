@@ -15,11 +15,14 @@ function randomcard(){
     let output = document.getElementById('output')
     ranCollection = Object.entries(cardstock)[0,getRandomInt(0, Object.entries(cardstock).length-1)]
     ranCard = ranCollection[1].cards[getRandomInt(0,ranCollection[1].cards.length-1)]
-    output.innerHTML+=`<div class="card">
+    stringzona=`<div class="card">
                 <p>${ranCard.name}</p>
                 <p>${ranCard.type}</p>
-                <p>${ranCard.text}</p>
-                <p>${ranCard.power}/${ranCard.toughness}</p>
-             </div> 
+                <p>${(ranCard.text).replaceAll("{W}","<img src='img/w.png'>").replaceAll("{U}","<img src='img/u.png'>").replaceAll("{B}","<img src='img/b.png'>").replaceAll("{R}","<img src='img/r.png'").replaceAll("{G}", "<img src='img/g.png'>").replaceAll("{T}","<img src='img/t.png'>")}</p>
     `
+    if(ranCard.power!=undefined){
+        stringzona+=`<p class='PowTough'>${ranCard.power}/${ranCard.toughness}</p>
+        </div>`
+    }
+    output.innerHTML+=stringzona
 }
